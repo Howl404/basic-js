@@ -21,7 +21,6 @@ function getSeason(date) {
     throw new Error("Invalid date!");
   }
   if(date instanceof Date) {
-    console.debug(l)
     
     try {
       date.toISOString();
@@ -48,6 +47,3 @@ function getSeason(date) {
 module.exports = {
   getSeason
 };
-
-
-console.log(getSeason(new Date(2019, 11, 22, 23, 45, 11, 500)));
